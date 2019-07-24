@@ -1,6 +1,9 @@
+
+from django.contrib import admin
 from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('/mentor', views.mentor),
+    path('mentee/', views.mentee, name='mentee'),
+    path('mentor/', views.mentor),
 ]

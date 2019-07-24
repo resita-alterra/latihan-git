@@ -1,0 +1,16 @@
+{% extends 'base/ATA_base.html' %}
+{% block content %}
+<div class="container mentee_content">
+    {% for data in murid %}
+    <div class="row">
+        <div class="col-md-6 text-right mentee_pic">
+            <img src="{{data.profile_pic}}" width="50%", height="80%">
+        </div>
+        <div class="col-md-6 mentee_profile text-left">
+            <h3>{{data.nama}}</h3>
+            <p>"{{data.quotes}}"</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
